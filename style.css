@@ -1,0 +1,296 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*
+<!-- 不建议修改 -->
+<!-- 控件上没写适配，可能会导致动画跳动 -->
+*/
+
+.main {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 75%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 1px 60px rgba(20, 50, 18, 0.2);
+  border-radius: 30px;
+  -webkit-animation-name: Box;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes 'Box'
+{
+	from{
+		box-shadow: 0 1px 5px rgba(0, 0, 0, 0);
+	}
+	to{
+		box-shadow: 0 1px 60px rgba(20, 50, 18, 0.2);
+	}
+}
+.info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.head {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  border-radius: 52px;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  padding: 1px;
+}
+
+.head :hover{
+	transition: 1s;
+	transform: scale(1.2);
+}
+
+/*  介绍部分*/
+
+.jieshao{
+	display: flex;
+	flex-direction: row;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.jie-img1{
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+}
+.jie-img1 :hover{
+	transition: 1s;
+	transform: scale(1.1);
+}
+.jieshao h1{
+	font-size: 9px;
+	text-align: -moz-center;
+	color: #646464;
+	margin-top: 1px;
+	margin-left: 2px;
+}
+.jieshao h1:hover{
+	color:transparent;
+	background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+	-webkit-background-clip: text;
+	font-size: 12px;
+	transition-duration:0.5s;
+}
+.div1{
+  height: 100%;
+  width: 100%;
+  background-color: #60C2E0;
+  position: absolute;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 100px;
+}
+.pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  transition: all 0.2s;
+  border: 0px solid #fff;
+}
+.sign {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  border: 2px solid #fff;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.sign:hover{
+	background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+.box1{
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 0px;
+  box-shadow: 0 1px 15px rgba(60, 90, 10, 0.15);
+  border-radius: 25px;
+  margin-top: 10px;
+  transition:all 0.5s;
+  }
+.box1:hover{
+	margin: 10px;
+	padding: 5%;
+	box-shadow: 0 10px 50px rgba(10,200,60,0.25);
+}
+.box2{
+  width: 33%;
+  background-color: #29BEDB;
+  padding: 2px;
+  box-shadow: 0 1px 15px rgba(20, 50, 18, 0.2);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+      -webkit-animation-name: 'D1';
+      -webkit-animation-duration: 4s;
+      -webkit-animation-iteration-count:1;
+}
+
+@-webkit-keyframes 'D1'
+{
+    from {
+		width: 30%;
+    }
+    to{
+		width: 33%;
+    }
+}
+.box3{
+  width: 85%;
+  background-color: #4DA2F7;
+  padding: 2px;
+  box-shadow: 0 1px 15px rgba(50, 50, 58, 0.2);
+  border-radius: 25px;
+    display: flex;
+  flex-direction: row;
+  -webkit-animation-name: 'D2';
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count:1;
+}
+@-webkit-keyframes 'D2'
+{
+    from {
+		width: 45%;
+    }
+    to{
+		width: 85%;
+    }
+}
+.box4{
+  width: 55%;
+  background-color: #864DF7FC;
+  padding: 2px;
+  box-shadow: 0 1px 15px rgba(20, 50, 18, 0.2);
+  border-radius: 25px;
+    display: flex;
+  flex-direction: row;
+  -webkit-animation-name: 'D3';
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count:1;
+}
+@-webkit-keyframes 'D3'
+{
+    from {
+		width: 45%;
+    }
+    to{
+		width: 55%;
+    }
+}
+.box5{
+  width: 70%;
+  background-color: #F74DBCFC;
+  padding: 2px;
+  box-shadow: 0 1px 15px rgba(20, 50, 18, 0.2);
+  border-radius: 25px;
+    display: flex;
+  flex-direction: row;
+  -webkit-animation-name: 'D4';
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count:1;
+}
+@-webkit-keyframes 'D4'
+{
+    from {
+		width: 30%;
+    }
+    to{
+		width: 70%;
+    }
+}
+.box6{
+  width: 40%;
+  background-color: #F7CF4DFC;
+  padding: 2px;
+  box-shadow: 0 1px 15px rgba(20, 50, 18, 0.2);
+  border-radius: 25px;
+    display: flex;
+  flex-direction: row;
+  -webkit-animation-name: 'D5';
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count:1;
+}
+@-webkit-keyframes 'D5'
+{
+    from {
+		width: 30%;
+    }
+    to{
+		width: 40%;
+    }
+}
+.cut {
+  width: 100%;
+  height: 3px;
+  margin: 5px 0;
+ /* background: linear-gradient(to right,#F74D81FC, #4D57F7FC,#DDF74DFC,#53F74DFC);  */
+ background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  border-radius: 50px;
+}
+.label {
+  margin: 8px 0;
+  font-size: 13px;
+  color: #424242c4;
+}
+.label1{
+  font-size: 11px;
+  color: #2D5256C9;
+  font-weight: 500;
+}
+.name h1 {
+  margin: 0 5px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #646464;
+  transition: all 0.5s;
+}
+.name h1:hover{
+	color:transparent;
+	background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+	-webkit-background-clip: text;
+}
+.shu{
+  width: 55%;
+  font-size: 10px;
+  color: #000000B3;
+  background-color: #05262A30;
+  box-shadow: 0 1px 15px rgba(20, 50, 18, 0.2);
+  border-radius: 15px;
+  padding: 7px;
+  font-weight: bold;
+    -webkit-animation-name: 'W1';
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count:1;
+}
+@-webkit-keyframes 'W1'
+{
+    from {
+		width: 50%;
+    }
+    to{
+		width: 55%;
+    }
+}
