@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -26,14 +26,13 @@
   -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
 }
-@-webkit-keyframes 'Box'
-{
-	from{
-		box-shadow: 0 1px 5px rgba(0, 0, 0, 0);
-	}
-	to{
-		box-shadow: 0 1px 60px rgba(20, 50, 18, 0.2);
-	}
+@-webkit-keyframes 'Box' {
+  from {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0);
+  }
+  to {
+    box-shadow: 0 1px 60px rgba(20, 50, 18, 0.2);
+  }
 }
 .info {
   display: flex;
@@ -52,46 +51,83 @@
   padding: 1px;
 }
 
-.head :hover{
-	transition: 1s;
-	transform: scale(1.2);
+.head :hover {
+  transition: 1s;
+  transform: scale(1.2);
 }
 
 /*  介绍部分*/
 
-.jieshao{
-	display: flex;
-	flex-direction: row;
-	margin-top: 2px;
-	margin-bottom: 2px;
+.jieshao {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  justify-content: center;
+  align-items: center;
 }
-.jie-img1{
-	width: 20px;
-	height: 20px;
-	margin-left: 10px;
+.apps {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  justify-content: center;
+  align-items: center;
+  background-color: #03a9f4;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 20px;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+  margin: 10px;
 }
-.jie-img1 :hover{
-	transition: 1s;
-	transform: scale(1.1);
+.apps img {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
 }
-.jieshao h1{
-	font-size: 9px;
-	text-align: -moz-center;
-	color: #646464;
-	margin-top: 1px;
-	margin-left: 2px;
+.apps h2 {
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 2px;
+  color: white;
+  padding-right: 2px;
 }
-.jieshao h1:hover{
-	color:transparent;
-	background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
-	-webkit-background-clip: text;
-	font-size: 12px;
-	transition-duration:0.5s;
+.jie-img1 {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
 }
-.div1{
+.jie-img1 :hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+.jieshao h1 {
+  font-size: 9px;
+  text-align: -moz-center;
+  color: #646464;
+  margin-left: 2px;
+}
+.jieshao h3 {
+  font-size: 7px;
+  text-align: -moz-center;
+  color: #646464;
+}
+.jieshao a {
+  text-decoration: none;
+}
+.jieshao h1:hover {
+  color: transparent;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  -webkit-background-clip: text;
+  font-size: 12px;
+  transition-duration: 0.5s;
+}
+.div1 {
   height: 100%;
   width: 100%;
-  background-color: #60C2E0;
+  background-color: #60c2e0;
   position: absolute;
   margin: 0px auto;
   text-align: center;
@@ -118,10 +154,10 @@
   align-items: center;
   transition: all 0.3s;
 }
-.sign:hover{
-	background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+.sign:hover {
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 }
-.box1{
+.box1 {
   width: 100%;
   max-width: 800px;
   background-color: #fff;
@@ -129,125 +165,120 @@
   box-shadow: 0 1px 15px rgba(60, 90, 10, 0.15);
   border-radius: 25px;
   margin-top: 10px;
-  transition:all 0.5s;
-  }
-.box1:hover{
-	margin: 10px;
-	padding: 5%;
-	box-shadow: 0 10px 50px rgba(10,200,60,0.25);
+  transition: all 0.5s;
 }
-.box2{
+.box1:hover {
+  margin: 10px;
+  padding: 5%;
+  box-shadow: 0 10px 50px rgba(10, 200, 60, 0.25);
+}
+.box2 {
   width: 33%;
-  background-color: #29BEDB;
+  background-color: #29bedb;
   padding: 2px;
   box-shadow: 0 1px 15px rgba(20, 50, 18, 0.2);
   border-radius: 25px;
   display: flex;
   flex-direction: row;
-      -webkit-animation-name: 'D1';
-      -webkit-animation-duration: 4s;
-      -webkit-animation-iteration-count:1;
+  -webkit-animation-name: "D1";
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
 }
 
-@-webkit-keyframes 'D1'
-{
-    from {
-		width: 30%;
-    }
-    to{
-		width: 33%;
-    }
+@-webkit-keyframes 'D1' {
+  from {
+    width: 30%;
+  }
+  to {
+    width: 33%;
+  }
 }
-.box3{
-  width: 85%;
-  background-color: #4DA2F7;
+.box3 {
+  width: 65%;
+  background-color: #4da2f7;
   padding: 2px;
   box-shadow: 0 1px 15px rgba(50, 50, 58, 0.2);
   border-radius: 25px;
-    display: flex;
+  display: flex;
   flex-direction: row;
-  -webkit-animation-name: 'D2';
+  -webkit-animation-name: "D2";
   -webkit-animation-duration: 4s;
-  -webkit-animation-iteration-count:1;
+  -webkit-animation-iteration-count: 1;
 }
-@-webkit-keyframes 'D2'
-{
-    from {
-		width: 45%;
-    }
-    to{
-		width: 85%;
-    }
+@-webkit-keyframes 'D2' {
+  from {
+    width: 35%;
+  }
+  to {
+    width: 65%;
+  }
 }
-.box4{
+.box4 {
+  width: 85%;
+  background-color: #864df7fc;
+  padding: 2px;
+  box-shadow: 0 1px 15px rgba(20, 50, 18, 0.2);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  -webkit-animation-name: "D3";
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes 'D3' {
+  from {
+    width: 45%;
+  }
+  to {
+    width: 85%;
+  }
+}
+.box5 {
   width: 55%;
-  background-color: #864DF7FC;
+  background-color: #f74dbcfc;
   padding: 2px;
   box-shadow: 0 1px 15px rgba(20, 50, 18, 0.2);
   border-radius: 25px;
-    display: flex;
+  display: flex;
   flex-direction: row;
-  -webkit-animation-name: 'D3';
+  -webkit-animation-name: "D4";
   -webkit-animation-duration: 4s;
-  -webkit-animation-iteration-count:1;
+  -webkit-animation-iteration-count: 1;
 }
-@-webkit-keyframes 'D3'
-{
-    from {
-		width: 45%;
-    }
-    to{
-		width: 55%;
-    }
+@-webkit-keyframes 'D4' {
+  from {
+    width: 30%;
+  }
+  to {
+    width: 55%;
+  }
 }
-.box5{
-  width: 70%;
-  background-color: #F74DBCFC;
-  padding: 2px;
-  box-shadow: 0 1px 15px rgba(20, 50, 18, 0.2);
-  border-radius: 25px;
-    display: flex;
-  flex-direction: row;
-  -webkit-animation-name: 'D4';
-  -webkit-animation-duration: 4s;
-  -webkit-animation-iteration-count:1;
-}
-@-webkit-keyframes 'D4'
-{
-    from {
-		width: 30%;
-    }
-    to{
-		width: 70%;
-    }
-}
-.box6{
+.box6 {
   width: 40%;
-  background-color: #F7CF4DFC;
+  background-color: #f7cf4dfc;
   padding: 2px;
   box-shadow: 0 1px 15px rgba(20, 50, 18, 0.2);
   border-radius: 25px;
-    display: flex;
+  display: flex;
   flex-direction: row;
-  -webkit-animation-name: 'D5';
+  -webkit-animation-name: "D5";
   -webkit-animation-duration: 4s;
-  -webkit-animation-iteration-count:1;
+  -webkit-animation-iteration-count: 1;
 }
-@-webkit-keyframes 'D5'
-{
-    from {
-		width: 30%;
-    }
-    to{
-		width: 40%;
-    }
+@-webkit-keyframes 'D5' {
+  from {
+    width: 30%;
+  }
+  to {
+    width: 40%;
+  }
 }
 .cut {
   width: 100%;
   height: 3px;
   margin: 5px 0;
- /* background: linear-gradient(to right,#F74D81FC, #4D57F7FC,#DDF74DFC,#53F74DFC);  */
- background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  /* background: linear-gradient(to right,#F74D81FC, #4D57F7FC,#DDF74DFC,#53F74DFC);  */
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
   border-radius: 50px;
 }
 .label {
@@ -255,9 +286,9 @@
   font-size: 13px;
   color: #424242c4;
 }
-.label1{
+.label1 {
   font-size: 11px;
-  color: #2D5256C9;
+  color: #2d5256c9;
   font-weight: 500;
 }
 .name h1 {
@@ -267,30 +298,29 @@
   color: #646464;
   transition: all 0.5s;
 }
-.name h1:hover{
-	color:transparent;
-	background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
-	-webkit-background-clip: text;
+.name h1:hover {
+  color: transparent;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  -webkit-background-clip: text;
 }
-.shu{
+.shu {
   width: 55%;
   font-size: 10px;
-  color: #000000B3;
-  background-color: #05262A30;
+  color: #000000b3;
+  background-color: #05262a30;
   box-shadow: 0 1px 15px rgba(20, 50, 18, 0.2);
   border-radius: 15px;
   padding: 7px;
   font-weight: bold;
-    -webkit-animation-name: 'W1';
-    -webkit-animation-duration: 4s;
-    -webkit-animation-iteration-count:1;
+  -webkit-animation-name: "W1";
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
 }
-@-webkit-keyframes 'W1'
-{
-    from {
-		width: 50%;
-    }
-    to{
-		width: 55%;
-    }
+@-webkit-keyframes 'W1' {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 55%;
+  }
 }
