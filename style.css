@@ -173,7 +173,7 @@
   box-shadow: 0 10px 50px rgba(10, 200, 60, 0.25);
 }
 .box2 {
-  width: 63%;
+  width: 33%;
   background-color: #29bedb;
   padding: 2px;
   box-shadow: 0 1px 15px rgba(20, 50, 18, 0.2);
@@ -190,7 +190,7 @@
     width: 30%;
   }
   to {
-    width: 63%;
+    width: 33%;
   }
 }
 .box3 {
